@@ -168,13 +168,13 @@ namespace BitefightProject
 
         public static int LicenseControl(string Username)
         {
-            string source = "";
-            WebRequest req = HttpWebRequest.Create("http://license.nowingame.com/default.aspx?act=search&username=" + Username );
-            using (StreamReader reader = new StreamReader(req.GetResponse().GetResponseStream()))
-            {
-                source = reader.ReadToEnd();
-            }
-            return Convert.ToInt32(source);
+            //string source = "";
+            //WebRequest req = HttpWebRequest.Create("http://license.nowingame.com/default.aspx?act=search&username=" + Username );
+            //using (StreamReader reader = new StreamReader(req.GetResponse().GetResponseStream()))
+            //{
+            //    source = reader.ReadToEnd();
+            //}
+            return Convert.ToInt32(15);
         }
     }
 }
